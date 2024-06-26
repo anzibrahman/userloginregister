@@ -76,7 +76,7 @@ const Login = () => {
     try {
       await authService.login({ mobileNumber, password });
       navigate('/');
-      alert('please register first');
+      alert('login successful');
     } catch (err) {
       console.error(err.message);
       alert('Login Failed');
